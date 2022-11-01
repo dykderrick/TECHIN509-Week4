@@ -50,7 +50,7 @@ def flood_fill(input_board: List[str], old: str, new: str, x: int, y: int) -> Li
         if output_board[cr_x][cr_y] == old:
             output_board[cr_x] = output_board[cr_x][:cr_y] + new + output_board[cr_x][cr_y + 1:]
 
-            # S0 detailed, cool job
+            # So detailed, cool job!
             if cr_x < m - 1:  # check the boundary correctness
                 dfs(cr_x + 1, cr_y)
 
